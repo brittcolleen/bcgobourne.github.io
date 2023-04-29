@@ -1,119 +1,84 @@
-@charset "utf-8";
-
-#hero, body, nav, #img1, #p1, #p2, footer, h2{
-    padding: 0;
+/*css reset*/
+header, h1, p, footer {
     margin: 0;
+    padding: 0;
+}
+/* basic styles*/
+body {
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;  
 }
 
-.container {
-    padding-top: 20%;
-  text-align: center;
+header {
+    max-width: 100%; height: 300px;
+    background-image: url(../assests/images/pexels-steve-johnson-1161771.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-body{
-    background-color: #FAF9F6;
-}
-
-#img2{
-   width: 100%;
-}
-#img3{
-    width: 100%;
-}
-
-#kate{
-    text-align: left;
-    
-}
-#bill{ 
-    text-align: right; 
-    
-}
-
-h3{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: xxx-large;
-}
-
-
-h1{
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    top: 180px;
-    left: 13px;
+#headertxt {
     position: absolute;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: xxx-large;
-    line-height: 1.5;
-   }
-nav{
-text-align: right;
-font-family: Arial, Helvetica, sans-serif;
-position: relative;
-top: 45px;
-   }   
-a.nav:link{
-    text-decoration: none;
-    color:#009fbb
+    margin-top: 15%;
+    margin-left: 2%;
+    color: whitesmoke;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3vw;
 }
 
-a.nav:visited{
-    color:#009fbb;
+nav {
+ background-color: rgb(0, 69, 173);   
+ padding: 1%;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+text-align: left;
 }
-a.nav:hover{
-    text-decoration: underline;
-}
-a.button:link, a.button:visited{ 
-    background-color: gold;
-    color: black;
-    padding: 10px 20px;
-    text-align: center;
+
+/* styling for links and buttons*/
+a:link {
     text-decoration: none;
-    display: inline-block;
+    color: goldenrod;
 }
-a.button:hover{
+a:visited {
+    color: goldenrod;
+
+}
+a:hover {
+    background-color: black;
+    padding: 1%;
+}
+a:active {
     text-decoration: underline;
 }
-.button{
-   padding-top: 13px;
-   display: inline-block;
+
+.button {
+    background-color: rgb(0, 69, 173);
+    border-radius: 15px;
+    color: goldenrod;
+    padding: 1%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-#img1{
-    float: left;
-    margin-right: 100px;
-    margin-top: 10%;
-   margin-left: 10%;
-   padding-bottom: 15px;
-   background-color: gold;  
+footer {
+    display: flex;
+    margin-top: 15%;
+    padding: 2%;
+    justify-content: space-between;
+    align-content: center;
 }
-h2 {
-    text-align: left;
-   position: absolute;
-   left: 11%;
-   padding-top: 10%;
-   font-family: Arial, Helvetica, sans-serif;
-   font-size: xxx-large;
-   color: #fff;
-}
-#p1{
-    float: left;
-    display: block;
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
     text-align: center;
-    position: relative;
-    margin-right: 70%;
-    margin-left: 20px;
-    left: 10%;  
+    font-size: larger;
 }
-#p2{
-    display: block;
-    margin-right: 100px;
-    padding-top: 13%;
-    text-align: center;   
-}
-footer{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-top: 20%;
-    color: #009fbb;
+
+/* Responsive*/
+
+@media screen and (width: 480px) {
+    footer {
+      align-items: center; 
+       
+    }
+    
 }
